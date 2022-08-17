@@ -6,14 +6,14 @@ namespace Task1
 	{
 		static void Main(string[] args)
 		{
-			int[] arr = { 2, 4, 8, 7 };
+			int[] arr = { 2, 3, 4, 8, 7 };
 			Console.WriteLine(Task1A(arr));
 
 
 			Console.WriteLine(Task1B("aaaabaaccbbbccc"));
 
 			var a = new List<int>() {
-				1, 2, 3, 4, 5, 6, 7, 8
+				1, 2, 3, 4, 5, 6, 7
 			};
 
 			foreach (var item in Task1C(a))

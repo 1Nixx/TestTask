@@ -1,0 +1,23 @@
+﻿@section Styles {
+	<link href="~/css/index.css" rel="stylesheet" />
+}
+@using Task2.Models
+@model List<Shop>
+
+@for(int i = 0; i < Model.Count; i++){
+	<div class="item" id="@Model[i].Id">
+		<div class="item-data">
+			<div>
+				<p class="company-name">@Model[i].Name</p>
+
+				<p>@Model[i].Address</p>
+				<p>Время работы: @Model[i].WorkingHours</p>
+			</div>
+			<a href="@Url.Action("Items", "Home", new {id = Model[i].Id})">Список товаров</a>
+		</div>
+	</div>
+}
+
+@section Scripts{
+	<script src="~/js/script.js"></script>
+}

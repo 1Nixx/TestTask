@@ -1,0 +1,20 @@
+﻿<!DOCTYPE HTML>
+<head>
+	<title>@ViewData["Title"]</title>
+	<link href="~/css/layout.css" rel="stylesheet" />
+	@RenderSection("Styles", false)
+</head>
+<body>
+
+	<main>
+		<h3>@ViewData["Title"]</h3>
+		<div class="item-list">
+
+			@RenderBody()
+
+		</div>
+	</main>
+	<script src="~/lib/jquery/jquery.min.js"></script>
+	<script src="~/lib/jquery-color/jquery.color.min.js"></script>
+	@RenderSection("Scripts", false)
+</body>

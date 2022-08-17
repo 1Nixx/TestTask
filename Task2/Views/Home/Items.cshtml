@@ -1,0 +1,20 @@
+﻿@section Styles {
+	<link href="~/css/items.css" rel="stylesheet" />
+}
+@using Task2.Models
+@model List<Item>
+
+@for (int i = 0; i < Model.Count; i++)
+{
+	<div class="item" id="@Model[i].Id">
+		<div class="item-data">
+			<p class="item-name">@Model[i].Name</p>
+
+			<p class="item-desc">@Model[i].Description</p>
+		</div>
+	</div>
+}
+
+@section Scripts{
+	<script src="~/js/script.js"></script>
+}
